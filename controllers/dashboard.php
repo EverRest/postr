@@ -45,6 +45,11 @@ class Dashboard extends Controller
         $this->model->xhrDeleteListing();
     }
 
+    public function xhrRedactListing()
+    {
+        $this->model->xhrRedactListing();
+    }
+
     public function logout()
     {
         Session::destroy();

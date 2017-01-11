@@ -29,10 +29,16 @@ class Dashboard_Model extends Model {
 
     public function xhrDeleteListing() {
         $id = $_POST['id'];
-        echo $id;
-        exit;
         $sth = $this->db->prepare('DELETE FROM dashboard WHERE id = "'.$id.'"');
         $sth->execute();
+        return FALSE;
+    }
+
+    public function xhrRedactListing()
+    {
+        $id = $_POST['id'];
+        echo $id;
+        exit;
     }
 }
 ?>
