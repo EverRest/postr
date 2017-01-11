@@ -10,6 +10,9 @@
     <!-- Bootstrap -->
     <link href="<?php echo URL; ?>vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link href="<?php echo URL; ?>vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
     <!-- Custom -->
     <link href="<?php echo URL; ?>public/css/custom.css" rel="stylesheet">
 
@@ -28,6 +31,7 @@
         }
     }
     ?>
+    <script src="<?php echo URL; ?>vendor/validation/dist/jquery.validate.min.js"></script>
 </head>
 <body>
     <?php Session::init(); ?>
@@ -48,14 +52,20 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="<?php echo URL; ?>dashboard/index">Dashboard</a></li>
-                        <?php if(Session::get('loggedIn') == true):?>
+                        <li><a href="<?php echo URL; ?>dashboard/index">New</a></li>
+                        <li><a href="<?php echo URL; ?>dashboard/all">Dashboard</a></li>
+
+                        <?php if(Session::get('loggedIn') == TRUE):?>
                             <li><a href="<?php echo URL; ?>dashboard/logout">Logout</a></li>
                         <?php else: ?>
-                            <li><a href="#">Login</a></li>
+                            <li><a href="<?php echo URL; ?>login">Login</a></li>
                         <?php endif; ?>
+
                         <li><a href="<?php echo URL; ?>help">Help</a></li>
-                        <li><a href="<?php echo URL; ?>moderation">Moderation</a></li>
+
+                        <?php if(Session::get('moderator') == TRUE): ?>
+                            <li><a href="<?php echo URL; ?>dashboard/moderate">Moderation</a></li>
+                        <? endif; ?>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->

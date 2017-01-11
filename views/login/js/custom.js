@@ -1,3 +1,15 @@
-/**
- * Created by PROGRAMERIUA on 10.01.2017.
- */
+$(function (){
+    $("#login-form").validate({
+        rules: {
+            login: {
+              required: true,
+              minlength: 4
+
+            },
+            pwd: {
+              required: true,
+              minlength: 4
+            }
+        }
+    });
+});

@@ -83,8 +83,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `login`, `password`, `email`, `ip`, `browser`) VALUES
-(1, 'admin', '93349ff382afb2ec5dd70bc5a4f54c5d', 'admin@admin.ua', '', ''),
-(2, 'moderator', '0408f3c997f309c03b08bf3a4bc7b730', 'moderator@admin.ua', '', '');
+(1, 'admin', '93349ff382afb2ec5dd70bc5a4f54c5d', 'admin@admin.ua', '', '');
 
 --
 -- Индексы сохранённых таблиц
@@ -126,7 +125,7 @@ ALTER TABLE `data`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

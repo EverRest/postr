@@ -9,14 +9,17 @@ class Login_Model extends Model
         $sth = $this->db->prepare("SELECT id FROM users WHERE login = :login AND password = MD5(:password)");
         $sth->execute(array(
             ':login' => $_POST['login'],
-            ':password' => $_POST['password']
+            ':password' => $_POST['pwd']
         ));
 
         $data = $sth->fetchAll();
         $count = $sth->rowCount();
         if($count > 0) {
             Session::init();
-            Session::set('loggedIn', true);
+            Session::set('loggedIn', TRUE);
+            if ($_POST['login'] == 'admin') {
+                Session::set('moderator', TRUE);
+            }
             header('Location: ../dashboard');
         } else {
             header('Location: ../login');

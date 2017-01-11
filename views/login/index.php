@@ -1,7 +1,13 @@
 <h1>Login</h1>
 
-<form action="login/run" method="post">
-    <label>Login</label><input type="text" name="login"><br>
-    <label>Password</label><input type="password" name="password"><br>
-    <label></label><input type="submit">
+<form id="login-form" class="form-horizontal jumbotron" action="login/run" method="post">
+    <div class="form-group">
+        <label for="login">Логін:</label>
+        <input type="text" class="form-control" name="login" id="login" placeholder="Ваше ім'я...">
+    </div>
+    <div class="form-group">
+        <label for="pwd">Пароль:</label>
+        <input type="password" class="form-control" name="pwd" id="pwd" placeholder="*************">
+    </div>
+    <button type="submit" class="btn btn-success">Підтвердити</button>
 </form>

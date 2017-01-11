@@ -19,6 +19,20 @@ class Dashboard extends Controller
         $this->view->render('dashboard/index');
     }
 
+    public function moderate()
+    {
+        $data = $this->model->xhrGetListings();
+        $this->view->msg = $data;
+        $this->view->render('dashboard/moderation');
+    }
+
+    public function all()
+    {
+        $data = $this->model->xhrGetListings();
+        $this->view->msg = $data;
+        $this->view->render('dashboard/list');
+    }
+
     public function xhrInsert() {
         $this->model->xhrInsert();
     }
