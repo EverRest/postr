@@ -31,8 +31,8 @@ class Dashboard_Model extends Model {
     public function xhrDeleteListing() {
         $_REQUEST = XSS::xss_cleaner($_REQUEST);
         $id = $_POST['id'];
-        $sth = $this->db->prepare('DELETE FROM dashboard WHERE id = "'.$id.'"');
-        $sth->execute();
+        $sth = $this->db->prepare('DELETE FROM dashboard WHERE id = :id');
+        $sth->execute(array(':id' => $id));
     }
 
     public function xhrEditListing()

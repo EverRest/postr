@@ -6,6 +6,7 @@ class Login_Model extends Model
     }
 
     public function run() {
+        $_REQUEST =XSS::xss_cleaner($_REQUEST);
         $sth = $this->db->prepare("SELECT id FROM users WHERE login = :login AND password = MD5(:password)");
         $sth->execute(array(
             ':login' => $_POST['login'],
