@@ -3,7 +3,7 @@
     <thead><h5 class="text-uppercase" >Книга скарг і пропозицій(Адмін)</h5></thead>
         <tbody>
         <?php foreach ($notes as $note): ?>
-            <tr>
+            <tr data-item-id="<?php echo $note['id'];?>">
                 <td><?php echo $note['name']; ?></td>
                 <td><?php echo $note['email']; ?></td>
                 <td><?php echo $note['text'];?></td>
@@ -16,3 +16,33 @@
         <?php endforeach; ?>
         </tbody>
 </table>
+<form id="edit-form" class="form-horizontal" action="<?php echo URL; ?>dashboard/xhrEditListing" title="Редактор" method="post">
+
+    <input type="hidden" name="id" id="id">
+
+    <div class="form-group">
+        <div class="col-md-12">
+            <input type="text" class="form-control" name="name" id="name" placeholder="Введіть Ваше ім'я" required="required">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <input type="email" class="form-control" name="email" id="email" placeholder="emailaddress@example.com" required="required">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <input type="text" class="form-control" name="site" id="site" placeholder="www.example.com">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <textarea class="form-control" id="text" name="text" placeholder="Ваше повідомлення" required="required"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-success btn-lg center-block">Надіслати</button>
+        </div>
+    </div>
+</form>

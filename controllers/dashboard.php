@@ -35,19 +35,26 @@ class Dashboard extends Controller
 
     public function xhrInsert() {
         $this->model->xhrInsert();
+        header('Location: ../dashboard/all');
     }
 
     public function xhrGetListings() {
         $this->model->xhrGetListings();
     }
 
+    public function xhrGetNoteById()
+    {
+        $this->model->xhrGetNoteById();
+    }
+
     public function xhrDeleteListing() {
         $this->model->xhrDeleteListing();
     }
 
-    public function xhrRedactListing()
+    public function xhrEditListing()
     {
-        $this->model->xhrRedactListing();
+        $this->model->xhrEditListing();
+        header('Location: ../dashboard/moderate');
     }
 
     public function logout()

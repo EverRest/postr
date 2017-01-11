@@ -31,14 +31,30 @@ class Dashboard_Model extends Model {
         $id = $_POST['id'];
         $sth = $this->db->prepare('DELETE FROM dashboard WHERE id = "'.$id.'"');
         $sth->execute();
-        return FALSE;
     }
 
-    public function xhrRedactListing()
+    public function xhrEditListing()
+    {
+        if (isset($_POST['text']) AND !empty($_POST['text'])) {
+            $id = $_POST['id'];
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $site = $_POST['site'];
+            $text = $_POST['text'];
+
+            $sth = $this->db->prepare('UPDATE dashboard SET name = :name, email = :email, site = :site, text = :text WHERE id = :id');
+            $sth->execute(array(':name' => $name, ':email' => $email, ':site' => $site, ':text' => $text, ':id' => $id));
+        }
+    }
+
+    public function xhrGetNoteById()
     {
         $id = $_POST['id'];
-        echo $id;
-        exit;
+        $sth = $this->db->prepare('SELECT name, email, site, text, ip, client FROM dashboard WHERE id = :id');
+        $sth->setFetchMode(PDO::FETCH_ASSOC);
+        $sth->execute(array('id' => $id));
+        $data = $sth->fetchAll();
+        echo json_encode($data);
     }
 }
 ?>

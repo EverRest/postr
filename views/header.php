@@ -13,6 +13,9 @@
     <!-- Font Awesome -->
     <link href="<?php echo URL; ?>vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- Dialog jQuery UI  -->
+    <link href="<?php echo URL; ?>vendor/jquery-ui-form/jquery-ui.min.css" rel="stylesheet">
+
     <!-- Custom -->
     <link href="<?php echo URL; ?>public/css/custom.css" rel="stylesheet">
 
@@ -24,6 +27,8 @@
     <![endif]-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="<?php echo URL; ?>vendor/components/jquery/jquery.min.js"></script>
+    <!-- Dialog jQuery UI -->
+    <script src="<?php echo URL; ?>vendor/jquery-ui-form/jquery-ui.min.js"></script>
     <?php
     if(isset($this->js)) {
         foreach($this->js as $js) {
