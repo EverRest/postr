@@ -1,6 +1,11 @@
 <?php  $notes = $this->msg; ?>
-<table class="table table-striped">
-    <thead><p class="text-uppercase" >Книга скарг і пропозицій</p></thead>
+<table class="table table-striped sortable">
+    <thead>
+        <th><p class="text-uppercase" >Ім'я</p></th>
+        <th><p class="text-uppercase" >Емейл</p></th>
+        <th><p class="text-uppercase" >Текст</p></th>
+        <th><p class="text-uppercase" >Дата</p></th>
+    </thead>
     <tbody>
     <?php foreach ($notes as $note): ?>
     <tr>

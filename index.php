@@ -7,5 +7,6 @@ require 'libs/Bootstrap.php';
 require 'libs/Controller.php';
 require 'libs/model.php';
 require 'libs/View.php';
+require 'libs/Captcha.php';
 $app = new Bootstrap();
 ?>

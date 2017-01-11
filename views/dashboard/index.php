@@ -30,9 +30,14 @@
             </div>
         </div>
         <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-info">Надіслати</button>
+            <div class="col-md-4 col-md-offset-5">
+                <img src="<?php echo URL; ?>vendor/captcha/generate.php" /><hr>
+                <input name="captcha-val" id="captcha-val" type="hidden" value="<?php echo $_SESSION['secure'] ?>" >
+                <input type="text" name="captcha" id="captcha" placeholder="CAPTCHA">
             </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-info btn-lg center-block">Надіслати</button>
         </div>
     </form>
 </div>

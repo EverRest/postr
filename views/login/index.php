@@ -1,5 +1,3 @@
-<h1>Login</h1>
-
 <form id="login-form" class="form-horizontal jumbotron" action="login/run" method="post">
     <div class="form-group">
         <label for="login">Логін:</label>

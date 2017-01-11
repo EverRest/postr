@@ -1,5 +1,6 @@
 $(function() {
-    $("#insert-form").validate({
+    var iform = $("#insert-form");
+    iform.validate({
         rules: {
             name: "required",
             text: "required",
@@ -7,6 +8,14 @@ $(function() {
                 required: true,
                 email: true
             }
+        }
+    });
+    iform.find('button').on('click', function (e) {
+        var origin = iform.find('#captcha-val').val(),
+            captcha = iform.find('#captcha').val();
+        if ( origin != captcha) {
+            iform.find('#captcha').val('Неправильно!');
+            e.preventDefault();
         }
     });
 

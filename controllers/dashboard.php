@@ -16,6 +16,7 @@ class Dashboard extends Controller
 
     public function index()
     {
+        $_SESSION['secure'] = Captcha::generation();
         $this->view->render('dashboard/index');
     }
 
