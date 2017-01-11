@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07e441e8-0973-4400-922a-a2f374657be6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/XSS.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/dashboard_model.php" afterPath="$PROJECT_DIR$/models/dashboard_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/custom.css" afterPath="$PROJECT_DIR$/public/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/list.php" afterPath="$PROJECT_DIR$/views/dashboard/list.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/moderation.php" afterPath="$PROJECT_DIR$/views/dashboard/moderation.php" />
     </list>
     <ignored path="postr.sufix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,17 +54,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard_model.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard_model.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/dashboard_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+            <state relative-caret-position="792">
+              <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
               <folding>
-                <marker date="1484156202182" expanded="true" signature="567:675" ph="INSERT INTO dashboard... " />
-                <marker date="1484156202182" expanded="true" signature="1030:1078" ph="SELECT * FRO... dashboard" />
-                <marker date="1484156202182" expanded="true" signature="1358:1400" ph="DELETE FROM " />
-                <marker date="1484156202182" expanded="true" signature="1851:1943" ph="UPDATE dashb... " />
-                <marker date="1484156202182" expanded="true" signature="2210:2282" ph="SELECT name,... dashboard" />
+                <marker date="1484156532063" expanded="true" signature="508:616" ph="INSERT INTO dashboard... " />
+                <marker date="1484156532063" expanded="true" signature="971:1019" ph="SELECT * FRO... dashboard" />
+                <marker date="1484156532063" expanded="true" signature="1330:1372" ph="DELETE FROM " />
+                <marker date="1484156532063" expanded="true" signature="1782:1874" ph="UPDATE dashb... " />
+                <marker date="1484156532063" expanded="true" signature="2172:2244" ph="SELECT name,... dashboard" />
               </folding>
             </state>
           </provider>
@@ -127,14 +122,14 @@
       <file leaf-file-name="XSS.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/XSS.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="102">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -198,9 +193,9 @@
         <option value="$PROJECT_DIR$/views/dashboard/moderation.php" />
         <option value="$PROJECT_DIR$/views/dashboard/list.php" />
         <option value="$PROJECT_DIR$/public/css/custom.css" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/libs/XSS.php" />
         <option value="$PROJECT_DIR$/models/dashboard_model.php" />
-        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -365,7 +360,7 @@
       <workItem from="1484077763440" duration="13396000" />
       <workItem from="1484124460697" duration="5455000" />
       <workItem from="1484131193879" duration="467000" />
-      <workItem from="1484134084154" duration="21048000" />
+      <workItem from="1484134084154" duration="21377000" />
     </task>
     <task id="LOCAL-00001" summary="finish commit">
       <created>1484049624995</created>
@@ -395,11 +390,25 @@
       <option name="project" value="LOCAL" />
       <updated>1484154731642</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="xss security commit">
+      <created>1484156289891</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1484156289891</updated>
+    </task>
+    <task id="LOCAL-00006" summary="xss security v.2 commit">
+      <created>1484156339970</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1484156339970</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75143000" />
+    <option name="totallyTimeSpent" value="75472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
@@ -441,7 +450,9 @@
     <MESSAGE value="delete commit" />
     <MESSAGE value="edit commit" />
     <MESSAGE value="captcha commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="captcha commit" />
+    <MESSAGE value="xss security commit" />
+    <MESSAGE value="xss security v.2 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="xss security v.2 commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -520,11 +531,11 @@
         <state relative-caret-position="272">
           <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding>
-            <marker date="1484156202182" expanded="true" signature="567:675" ph="INSERT INTO dashboard... " />
-            <marker date="1484156202182" expanded="true" signature="1030:1078" ph="SELECT * FRO... dashboard" />
-            <marker date="1484156202182" expanded="true" signature="1358:1400" ph="DELETE FROM " />
-            <marker date="1484156202182" expanded="true" signature="1851:1943" ph="UPDATE dashb... " />
-            <marker date="1484156202182" expanded="true" signature="2210:2282" ph="SELECT name,... dashboard" />
+            <marker date="1484156532063" expanded="true" signature="508:616" ph="INSERT INTO dashboard... " />
+            <marker date="1484156532063" expanded="true" signature="971:1019" ph="SELECT * FRO... dashboard" />
+            <marker date="1484156532063" expanded="true" signature="1330:1372" ph="DELETE FROM " />
+            <marker date="1484156532063" expanded="true" signature="1782:1874" ph="UPDATE dashb... " />
+            <marker date="1484156532063" expanded="true" signature="2172:2244" ph="SELECT name,... dashboard" />
           </folding>
         </state>
       </provider>
@@ -806,32 +817,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/dashboard_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-          <folding>
-            <marker date="1484156202182" expanded="true" signature="567:675" ph="INSERT INTO dashboard... " />
-            <marker date="1484156202182" expanded="true" signature="1030:1078" ph="SELECT * FRO... dashboard" />
-            <marker date="1484156202182" expanded="true" signature="1358:1400" ph="DELETE FROM " />
-            <marker date="1484156202182" expanded="true" signature="1851:1943" ph="UPDATE dashb... " />
-            <marker date="1484156202182" expanded="true" signature="2210:2282" ph="SELECT name,... dashboard" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/Bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/XSS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -841,6 +830,28 @@
         <state relative-caret-position="170">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/XSS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/dashboard_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding>
+            <marker date="1484156532063" expanded="true" signature="508:616" ph="INSERT INTO dashboard... " />
+            <marker date="1484156532063" expanded="true" signature="971:1019" ph="SELECT * FRO... dashboard" />
+            <marker date="1484156532063" expanded="true" signature="1330:1372" ph="DELETE FROM " />
+            <marker date="1484156532063" expanded="true" signature="1782:1874" ph="UPDATE dashb... " />
+            <marker date="1484156532063" expanded="true" signature="2172:2244" ph="SELECT name,... dashboard" />
+          </folding>
         </state>
       </provider>
     </entry>
