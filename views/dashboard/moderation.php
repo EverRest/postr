@@ -1,12 +1,12 @@
 <?php  $notes = $this->msg; ?>
 <table class="table table-striped sortable">
     <thead>
-        <th><p class="text-uppercase" >Ім'я</p></th>
-        <th><p class="text-uppercase" >Емейл</p></th>
-        <th><p class="text-uppercase" >Текст</p></th>
-        <th><p class="text-uppercase" >IP</p></th>
-        <th><p class="text-uppercase" >Браузер</p></th>
-        <th><p class="text-uppercase" >Дата</p></th>
+        <th><p class="text-uppercase" data-type = "name">Ім'я <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></p></th>
+        <th><p class="text-uppercase" data-type = "email">Емейл <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></p></th>
+        <th><p class="text-uppercase" data-type = "text">Текст <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></p></th>
+        <th><p class="text-uppercase" data-type = "ip">IP <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></p></th>
+        <th><p class="text-uppercase" data-type = "client">Браузер <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></p></th>
+        <th><p class="text-uppercase" data-type = "date">Дата <span class="glyphicon glyphicon-sort" aria-hidden="true"></span></p></th>
     </thead>
     <tbody>
     <?php foreach ($notes as $note): ?>

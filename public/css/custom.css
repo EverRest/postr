@@ -31,6 +31,10 @@ body {
     color: #555;
 }
 
+.sortable th span {
+    cursor: pointer;
+}
+
 .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
     border-radius: 5px;
 }

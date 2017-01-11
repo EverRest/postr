@@ -8,5 +8,6 @@ require 'libs/Controller.php';
 require 'libs/model.php';
 require 'libs/View.php';
 require 'libs/Captcha.php';
+require 'libs/XSS.php';
 $app = new Bootstrap();
 ?>
