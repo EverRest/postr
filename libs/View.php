@@ -13,7 +13,7 @@ class View
         } else {
             require 'views/header.php';
             require 'views/'.$name.'.php';
-            require 'views/footer.php';
+//            require 'views/footer.php';
         }
     }
 }

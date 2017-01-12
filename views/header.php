@@ -16,6 +16,9 @@
     <!-- Dialog jQuery UI  -->
     <link href="<?php echo URL; ?>vendor/jquery-ui-form/jquery-ui.min.css" rel="stylesheet">
 
+    <!-- Tablesorter.pager -->
+    <link href="<?php echo URL?>vendor/tablesorter/addons/pager/jquery.tablesorter.pager.css" rel="stylesheet">
+
     <!-- Custom -->
     <link href="<?php echo URL; ?>public/css/custom.css" rel="stylesheet">
 
@@ -29,6 +32,9 @@
     <script src="<?php echo URL; ?>vendor/components/jquery/jquery.min.js"></script>
     <!-- Dialog jQuery UI -->
     <script src="<?php echo URL; ?>vendor/jquery-ui-form/jquery-ui.min.js"></script>
+    <!-- Sortable -->
+    <script src="<?php echo URL; ?>vendor/tablesorter/jquery.tablesorter.min.js"></script>
+    <script src="<?php echo URL?>vendor/tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
     <?php
     if(isset($this->js)) {
         foreach($this->js as $js) {

@@ -10,6 +10,7 @@ $(function() {
             }
         }
     });
+
     iform.find('button').on('click', function (e) {
         var origin = iform.find('#captcha-val').val(),
             captcha = iform.find('#captcha').val();
@@ -55,6 +56,10 @@ $(function() {
         });
 
         form.dialog(opt).dialog('open');
+    });
+
+    $(function(){
+        $("#table").tablesorter();
     });
 
     $('.delete').on('click', function (o) {

@@ -31,7 +31,7 @@ body {
     color: #555;
 }
 
-.sortable th span {
+span.glyphicon.glyphicon-sort {
     cursor: pointer;
 }
 
